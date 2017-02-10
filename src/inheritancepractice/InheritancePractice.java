@@ -35,10 +35,15 @@ public class InheritancePractice {
         mc.startMotorcycle();
         mc.move();
         //broken below: 
-        System.out.println("Wheels: " + mc.getNumberOfWheels());
-        System.out.println("Occupants: " + mc.getNumberOfOccupants());
+//        System.out.println("Wheels: " + mc.getNumberOfWheels());
+//        System.out.println("Occupants: " + mc.getNumberOfOccupants());
         
-        
+        System.out.println("\nAppollo");
+        Appollo appollo = new Appollo();
+        appollo.setParents("Zeus and Leto");
+        System.out.println(appollo.getParents());
+        appollo.inspireFollowers();
+        appollo.meddleWithMortals();
     }
     
 }

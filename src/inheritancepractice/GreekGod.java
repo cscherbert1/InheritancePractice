@@ -20,7 +20,7 @@ public class GreekGod extends MythicalBeing{
     public String getParents() {
         return parents;
     }
-
+    
     public void setParents(String parents) {
         this.parents = parents;
     }
