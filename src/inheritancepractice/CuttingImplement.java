@@ -9,6 +9,8 @@ public class CuttingImplement extends Tool{
     private String cuttingTarget;
     
     public void cut(String cuttingTarget){
+        
+        setCuttingTarget(cuttingTarget);
         System.out.println("This tool is crudely cutting " + getCuttingTarget());
     }
     

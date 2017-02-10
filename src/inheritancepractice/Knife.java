@@ -16,7 +16,7 @@ public class Knife extends CuttingImplement{
     }
 
     public Boolean getLegalWhenConcealed() {
-        if(bladeLength < 3){
+        if(bladeLength <= 3){
             legalWhenConcealed = true;
         } else {
             legalWhenConcealed = false;
