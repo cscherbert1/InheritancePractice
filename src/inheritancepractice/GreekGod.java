@@ -3,10 +3,10 @@ package inheritancepractice;
 
 public class GreekGod extends MythicalBeing{
     private String symbol;
-    private String parents;
+    private String patronOf;
     
-    public void meddleWithMortals(){
-        System.out.println("They've angered us, most likely...");
+    public void conveneOnOlympus(){
+        System.out.println("It's a pretty tall mountain... Kind of a big deal.");
     }
 
     public String getSymbol() {
@@ -17,18 +17,13 @@ public class GreekGod extends MythicalBeing{
         this.symbol = symbol;
     }
 
-    public String getParents() {
-        return parents;
+    public String getPatronOf() {
+        return patronOf;
     }
     
-    public void setParents(String parents) {
-        this.parents = parents;
+    public void setPatronOf(String patronOf) {
+        this.patronOf = patronOf;
     }
 
-    @Override
-    public void setDomainOfInfluence(String domainOfInfluence) {
-        super.setDomainOfInfluence(domainOfInfluence); 
-        domainOfInfluence = "Mount Olympus";
-    }
 
 }

@@ -1,11 +1,17 @@
-
 package inheritancepractice;
 
-/**
- *
- * @author cscherbert1
- */
 public class Knife extends CuttingImplement{
+    
+    private double bladeLength;
+    private Boolean legalWhenConcealed;
+    
+    public void compareToCrocDundee(){
+        if (bladeLength < 13){
+            System.out.println("That's not a knife...");
+        } else {
+            System.out.println("Now That's a knife!");
+        }
+    }
 
     public double getBladeLength() {
         return bladeLength;
@@ -16,19 +22,10 @@ public class Knife extends CuttingImplement{
     }
 
     public Boolean getLegalWhenConcealed() {
-        if(bladeLength <= 3){
-            legalWhenConcealed = true;
-        } else {
-            legalWhenConcealed = false;
-        }
         return legalWhenConcealed;
     }
 
-    private double bladeLength;
-    private Boolean legalWhenConcealed;
-    
-    @Override
-    public void cut(String cuttingTarget){
-        System.out.println("This tool is precicely cutting " + this.getCuttingTarget());
-    }
+    public void setLegalWhenConcealed(Boolean legalWhenConcealed) {
+        this.legalWhenConcealed = legalWhenConcealed;
+    }   
 }

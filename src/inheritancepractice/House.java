@@ -3,7 +3,12 @@ package inheritancepractice;
 
 public class House extends WalledStructure{
     private int numberOfRooms;
-    private String address;
+    private String mailingAddress;
+    
+    @Override
+    public void provideShelter(){
+        System.out.println("Between 1 - 10, shelter provided is 10.");
+    }    
 
     public int getNumberOfRooms() {
         return numberOfRooms;
@@ -13,17 +18,11 @@ public class House extends WalledStructure{
         this.numberOfRooms = numberOfRooms;
     }
 
-    public String getAddress() {
-        return address;
+    public String getMailingAddress() {
+        return mailingAddress;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-    
-    @Override
-        public void provideShelter(){
-        System.out.println("Between 1 - 10, shelter provided is 10.");
-    }
-    
+    public void setMailingAddress(String mailingAddress) {
+        this.mailingAddress = mailingAddress;
+    }  
 }

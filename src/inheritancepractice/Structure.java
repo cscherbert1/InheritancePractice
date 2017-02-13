@@ -1,14 +1,18 @@
 
 package inheritancepractice;
 
-/**
- *
- * @author cscherbert1
- */
 public class Structure {
     private String timeNeededToBuild;
     private String materialsComprisedOf;
     private Boolean isPermenant;
+    
+    public void provideShelter(){
+        System.out.println("Between 1 - 10, shelter provided is 1.");
+    }
+    
+    public void buildStructure(){
+        System.out.println("Structure complete in " + timeNeededToBuild);
+    }
 
     public Boolean getIsPermenant() {
         return isPermenant;
@@ -16,10 +20,6 @@ public class Structure {
 
     public void setIsPermenant(Boolean isPermenant) {
         this.isPermenant = isPermenant;
-    }
-    
-    public void provideShelter(){
-        System.out.println("Between 1 - 10, shelter provided is 1.");
     }
 
     public String getTimeNeededToBuild() {

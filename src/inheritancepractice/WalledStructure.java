@@ -6,6 +6,11 @@ public class WalledStructure extends Structure{
     
     private int numberOfWalls;
     private boolean hasDoor;
+    
+    @Override
+    public void provideShelter(){
+        System.out.println("Between 1 - 10, shelter provided is 5.");
+    }    
 
     public boolean isHasDoor() {
         return hasDoor;
@@ -21,11 +26,5 @@ public class WalledStructure extends Structure{
 
     public void setNumberOfWalls(int numberOfWalls) {
         this.numberOfWalls = numberOfWalls;
-    }
-    
-    @Override
-    public void provideShelter(){
-        System.out.println("Between 1 - 10, shelter provided is 5.");
-    }
-    
+    }  
 }

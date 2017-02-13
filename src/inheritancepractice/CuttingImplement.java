@@ -1,17 +1,17 @@
 package inheritancepractice;
 
-/**
- *
- * @author cscherbert1
- */
 public class CuttingImplement extends Tool{
     private String substancesEasilyCutThrough;
-    private String cuttingTarget;
+    private boolean isSharp;
     
     public void cut(String cuttingTarget){
         
-        setCuttingTarget(cuttingTarget);
-        System.out.println("This tool is crudely cutting " + getCuttingTarget());
+        System.out.println("This tool is crudely cutting " + cuttingTarget);
+    }
+    
+    public void sharpen(){
+        System.out.println("You have sharpened your tool.");
+        isSharp = true;
     }
     
     public String getSubstancesEasilyCutThrough() {
@@ -22,12 +22,13 @@ public class CuttingImplement extends Tool{
         this.substancesEasilyCutThrough = substancesEasilyCutThrough;
     }
 
-    public String getCuttingTarget() {
-        return cuttingTarget;
+    public boolean isIsSharp() {
+        return isSharp;
     }
 
-    public void setCuttingTarget(String cuttingTarget) {
-        this.cuttingTarget = cuttingTarget;
+    public void setIsSharp(boolean isSharp) {
+        this.isSharp = isSharp;
     }
-            
+    
+    
 }

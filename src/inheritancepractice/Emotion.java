@@ -4,9 +4,15 @@ package inheritancepractice;
 public class Emotion {
     private String trigger;
     private String physicalResponse;
+    //either negative or positive emotion
+    private boolean isPositive;
     
     public void feel(){
-        System.out.println("You feel a feeling.");
+        if (isPositive){
+            System.out.println("You feel a good feeling.");
+        } else {
+            System.out.println("You feel a bad feeling.");
+        }  
     }
 
     public String getTrigger() {
@@ -24,4 +30,14 @@ public class Emotion {
     public void setPhysicalResponse(String physicalResponse) {
         this.physicalResponse = physicalResponse;
     }
+
+    public boolean isIsPositive() {
+        return isPositive;
+    }
+
+    public void setIsPositive(boolean isPositive) {
+        this.isPositive = isPositive;
+    }
+    
+    
 }
